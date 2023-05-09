@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO 02</title>
+    <style>
+        body { font: 16pt Calibri; }
+        button { font-size: 20pt; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Vamos fazer seu cadastro?</h1>
+    <button onclick="inicio()">Clique para começar</button>
+    <section id="resultado">
+        <p>Olá!</p>
+    </section>
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual é o seu nome?')
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#128512; &#9996;`
+        }
+    </script>
+</body>
+</html>
